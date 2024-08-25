@@ -1,7 +1,7 @@
 import axios from "axios";
 import authService from "./authService";
 
-const API_URL = "http://localhost:5000/api/dashboard";
+const API_URL = `${process.env.REACT_APP_API}/dashboard`;
 
 // Create an axios instance with default settings
 const apiClient = axios.create({
