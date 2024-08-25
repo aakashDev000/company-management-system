@@ -7,8 +7,8 @@
 /build
 
 # Ignore environment variable files
-/front-end/.env
-/back-end/.env
+# /front-end/.env
+# /back-end/.env
 
 # Misc
 .DS_Store
