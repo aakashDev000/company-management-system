@@ -20,6 +20,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         {isAuthenticated ? (
           <>
+            <Route path="/" element={<AdminDashboard />} />
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
             <Route path="/companies" element={<CompanyManagement />} />
             <Route
