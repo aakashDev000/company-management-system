@@ -10,6 +10,16 @@ const EmployeeDialog = ({ isOpen, onClose, onSubmit, employee }) => {
 
   const { employees } = useSelector((state) => state.employee);
 
+  const [employeeList, setEmployeeList] = useState(employees);
+
+  useEffect(() => {
+    if (employee) {
+      setEmployeeList(employees.filter((i) => i._id !== employee._id));
+    } else {
+      setEmployeeList(employees);
+    }
+  }, [employee, employees]);
+
   useEffect(() => {
     if (employee) {
       setName(employee.name);
@@ -95,7 +105,7 @@ const EmployeeDialog = ({ isOpen, onClose, onSubmit, employee }) => {
               className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 w-full text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select manager</option>
-              {employees.map((emp) => (
+              {employeeList.map((emp) => (
                 <option key={emp._id} value={emp._id}>
                   {emp.name}
                 </option>
