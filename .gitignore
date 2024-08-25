@@ -9,6 +9,7 @@
 # Ignore environment variable files
 # /front-end/.env
 # /back-end/.env
+/back-end/build
 
 # Misc
 .DS_Store
