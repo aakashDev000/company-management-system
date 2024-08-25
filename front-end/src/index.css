@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Modal Styles */
+.modal {
+    max-width: 500px;
+    margin: auto;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+
+/* Loader Styles */
+.loader {
+    border-top-color: #3498db;
+    animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* In your CSS file */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    /* background: white; */
+    border-radius: 8px;
+    /* padding: 20px; */
+    width: 100%;
+    max-width: 500px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
