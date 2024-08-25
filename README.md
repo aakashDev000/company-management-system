@@ -14,7 +14,6 @@ A company-employee information system built to manage and streamline company and
     - [Frontend Setup](#frontend-setup)
   - [Usage](#usage)
   - [Deployment](#deployment)
-  - [Contributing](#contributing)
 
 ## Introduction
 
@@ -112,14 +111,3 @@ After completing the setup, the application can be accessed via the frontend. Us
 The project is deployed and can be accessed at the following link:
 
 [Company Management System - Deployed App](https://company-management-system-3.onrender.com/)
-
-## Contributing
-
-Contributions are welcome! Please adhere to the following guidelines:
-
-1. Ensure a clear separation of concerns.
-2. Avoid code duplication.
-3. Maintain readable and well-documented code.
-4. Include tests where relevant.
-5. Follow best coding practices, including modular programming.
-6. Use Tailwind CSS consistently across the frontend.
