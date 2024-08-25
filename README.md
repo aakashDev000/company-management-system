@@ -76,23 +76,27 @@ The Company Management System is an admin-only authenticated application designe
    cd front-end
    ```
 
-3. **Install Dependencies:**
+3. **Create a `.env` File:**
+
+   Before starting the frontend application, create a `.env` file in the `front-end` directory and add the following line to connect to the local server:
+
+   ```plaintext
+   REACT_APP_API=http://localhost:5000/api
+   ```
+
+4. **Install Dependencies:**
 
    ```bash
    npm install
    ```
 
-4. **Start the Frontend Application:**
+5. **Start the Frontend Application:**
 
    ```bash
    npm run start
    ```
 
-   **Note:**
-
-   - The API URL is pre-configured in the `.env` file located in the `front-end` directory.
-
-5. **Access the Application Locally:**
+6. **Access the Application Locally:**
 
    Once the frontend is running, open your browser and navigate to:
 
