@@ -110,4 +110,4 @@ After completing the setup, the application can be accessed via the frontend. Us
 
 The project is deployed and can be accessed at the following link:
 
-[Company Management System - Deployed App](https://company-management-system-3.onrender.com/)
+[Company Management System - Deployed App](https://company-management-system-1.onrender.com)
