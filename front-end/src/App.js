@@ -16,11 +16,16 @@ function App() {
     <div className="min-h-screen bg-gray-100 overflow-hidden">
       {isAuthenticated && <Navbar />}
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        {!isAuthenticated && (
+          <>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </>
+        )}
+
         {isAuthenticated ? (
           <>
-            <Route path="/" element={<AdminDashboard />} />
+            <Route path="*" element={<AdminDashboard />} />
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
             <Route path="/companies" element={<CompanyManagement />} />
             <Route
