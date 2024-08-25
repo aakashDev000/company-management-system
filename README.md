@@ -41,55 +41,67 @@ The Company Management System is an admin-only authenticated application designe
 
 1. **Clone the Repository:**
 
-    ```bash
-    git clone https://github.com/aakashDev000/company-management-system.git
-    cd company-management-system
-    ```
+   ```bash
+   git clone https://github.com/aakashDev000/company-management-system.git
+   cd company-management-system
+   ```
 
 2. **Navigate to the Backend Directory:**
 
-    ```bash
-    cd back-end
-    ```
+   ```bash
+   cd back-end
+   ```
 
 3. **Install Dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 4. **Start the Backend Server:**
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
-    **Note:**
-    - A `.env` file is provided within the `back-end` directory, containing a connection string to a testing MongoDB cluster. Replace the connection string if you wish to use your own database. Otherwise, feel free to use the provided testing database.
+   **Note:**
+
+   - A `.env` file is provided within the `back-end` directory, containing a connection string to a testing MongoDB cluster. Replace the connection string if you wish to use your own database. Otherwise, feel free to use the provided testing database.
 
 ### Frontend Setup
 
 1. **Open a New Terminal Window:**
 2. **Navigate to the Frontend Directory:**
 
-    ```bash
-    cd front-end
-    ```
+   ```bash
+   cd front-end
+   ```
 
 3. **Install Dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 4. **Start the Frontend Application:**
 
-    ```bash
-    npm run start
-    ```
+   ```bash
+   npm run start
+   ```
 
-    **Note:**
-    - The API URL is pre-configured in the `.env` file located in the `front-end` directory.
+   **Note:**
+
+   - The API URL is pre-configured in the `.env` file located in the `front-end` directory.
+
+5. **Access the Application Locally:**
+
+   Once the frontend is running, open your browser and navigate to:
+
+   ```
+   http://localhost:3000/
+   ```
+
+   Copy and paste this URL into your browser to access the application locally.
 
 ## Usage
 
